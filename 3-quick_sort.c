@@ -23,6 +23,7 @@ int lomuto_partition(int *array, int low, int high)
 			if (i != j)
 			{
 				int temp = array[i];
+
 				array[i] = array[j];
 				array[j] = temp;
 				print_array(array, high + 1);
@@ -33,6 +34,7 @@ int lomuto_partition(int *array, int low, int high)
 	if ((i + 1) != high)
 	{
 		int temp = array[i + 1];
+
 		array[i + 1] = array[high];
 		array[high] = temp;
 		print_array(array, high + 1);
